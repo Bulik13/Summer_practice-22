@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.summerpractice.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_snackbar_returnFragment"
+            app:destination="@id/snackbar_returnFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.example.summerpractice.MessageFragment"
+        android:label="MessageFragment" >
+        <action
+            android:id="@+id/action_messageFragment_to_snackbar_returnFragment"
+            app:destination="@id/snackbar_returnFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.example.summerpractice.MusicFragment"
+        android:label="MusicFragment" >
+        <action
+            android:id="@+id/action_musicFragment_to_snackbar_returnFragment"
+            app:destination="@id/snackbar_returnFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.summerpractice.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_snackbar_returnFragment"
+            app:destination="@id/snackbar_returnFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.summerpractice.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_snackbar_returnFragment"
+            app:destination="@id/snackbar_returnFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/snackbar_returnFragment"
+        android:name="com.example.summerpractice.Snackbar_returnFragment"
+        android:label="Snackbar_returnFragment" />
+</navigation>

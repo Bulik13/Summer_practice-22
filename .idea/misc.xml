@@ -5,6 +5,10 @@
       <map>
         <entry key="..\:/Users/okind/AndroidStudioProjects/Summerpractice/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/okind/AndroidStudioProjects/Summerpractice/app/src/main/res/layout/activity_splash.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/okind/AndroidStudioProjects/Summerpractice/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/okind/AndroidStudioProjects/Summerpractice/app/src/main/res/layout/fragment_settings.xml" value="0.23169601482854496" />
+        <entry key="..\:/Users/okind/AndroidStudioProjects/Summerpractice/app/src/main/res/layout/item_student.xml" value="0.33" />
+        <entry key="..\:/Users/okind/AndroidStudioProjects/Summerpractice/app/src/main/res/layout/item_student_card.xml" value="0.13253012048192772" />
       </map>
     </option>
   </component>

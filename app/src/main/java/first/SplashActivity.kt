@@ -1,16 +1,22 @@
-package com.example.summerpractice
+package first
 
 import android.app.Activity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.example.summerpractice.R
+import com.example.summerpractice.databinding.ActivitySplashBinding
 
 class SplashActivity : Activity() {
 
+    private var _binding: ActivitySplashBinding? = null
+    private val binding get() = _binding!!
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        _binding = ActivitySplashBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         var name: EditText = findViewById(R.id.et_name)
         var height: EditText = findViewById(R.id.et_height)
@@ -18,6 +24,7 @@ class SplashActivity : Activity() {
         var age: EditText = findViewById(R.id.et_age)
         var button: Button = findViewById(R.id.b_answer)
         var answer: TextView = findViewById(R.id.tv_answer)
+        val name1: String = "dhdhjhdj"
 
         button.setOnClickListener {
             if(name.text.length > 0 && age.text.length > 0 && height.text.length > 0 && weight.text.length > 0){
@@ -32,7 +39,7 @@ class SplashActivity : Activity() {
                 }
             }
             else
-                answer.setText("Данные введены некорректно.")
+                answer.setText("Данные введены некорректно...")
         }
     }
 }

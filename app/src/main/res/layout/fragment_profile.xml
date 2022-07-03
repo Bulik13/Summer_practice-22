@@ -27,8 +27,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_profile"
-        tools:itemCount="6"
-        tools:listitem="@layout/item_student" />
+        tools:listitem="@layout/item_student"
+        tools:itemCount="6" />
     <Button
         android:id="@+id/button_profile"
         android:layout_width="wrap_content"

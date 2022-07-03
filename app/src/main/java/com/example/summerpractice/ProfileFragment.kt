@@ -19,7 +19,13 @@ class ProfileFragment: Fragment(R.layout.fragment_profile) {
 
         _binding = FragmentProfileBinding.bind(view)
 
-        adapter = StudentAdapter(StuentRepository.students)
+        adapter = StudentAdapter(StuentRepository.students) {
+            Snackbar.make(
+                binding.root,
+                "Student id: ${it.id}",
+                Snackbar.LENGTH_SHORT
+            ).show()
+        }
         binding.rvStudents.adapter = adapter
 
         with(binding){

@@ -3,8 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="8dp"
+    android:background="?selectableItemBackground"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp">
 
+    
     <TextView
         android:id="@+id/tv_firstname"
         android:layout_width="match_parent"
@@ -18,7 +25,7 @@
         tools:text="Bulat" />
 
     <TextView
-        android:id="@+id/tv_lastauthor"
+        android:id="@+id/tv_lastname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
